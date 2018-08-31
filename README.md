@@ -38,7 +38,7 @@ In all projects there needs to be a reliable method of source/version control. [
 
 ## General Branching Strategy
 
-![Branching Strategy Overview](style/assets/branching.png?raw=true)
+![Branching Strategy Overview](style/assets/branching.png)
 
 ## Git Repo Hosting
 One of the following should be used:
