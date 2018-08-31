@@ -9,6 +9,8 @@ A guide for preferred coding standards and styles at Eigen X.
 1. [Style Guide](#style)
 1. [IDE's and Code Editors](#ide)
 1. [Testing Guidelines](#testing)
+1. [Definition of Done](#definition-of-done)
+1. [Contributing](#contributing)
 
 # Agile
 
@@ -41,7 +43,7 @@ In all projects there needs to be a reliable method of source/version control. [
 ![Branching Strategy Overview](./assets/branching.png)
 
 **Branches:**
-- `master`/`release`: This is the live or production version of the code.
+- `master`/`release`: This is the live or production version of the code. The single source of truth for the most up-to-date code.
 - `dev`/`staging`: This is the staging version of the code. Testing of new features should be done here prior to a release to `master`/`release` branch.
 - `feature`: This branch should be where development takes place. Branch can be for individual developers or issues/bugs/features. Sometimes if the feature is big there will have to be subbranches merging into this. Naming isn't as important as long as the `pull request` to `dev`/`staging` includes the appropriate ticket number.
 
@@ -58,69 +60,63 @@ One of the following should be used:
 - BitBucket
 
 # Deployment
+In general, it is good practice to deploy from your `master`/`release` branch to your production server. Ideally, each release should contain a list of actions needed to deploy.
 
-General Principles:
+## Salesforce Specific
+Salesforce uses change sets to move code between environments rather then deploying from source. In this case see the `Deployment` section of [Software Development in Salesforce](https://www.linkedin.com/pulse/software-development-salesforce-tuan-lu/).
 
-
-Salesforce Specific:
-
-
-- single source of truth
-- based on tooling and client requiremnts there are a couple of strategies.
-- Tuan's post
 # Style
-# IDE
-# Testing
-
-## Languages and Frameworks - Tools and Style Guides
+Style and coding standards will vary based on language/library conventions.
 
 1. `Apex`
     - **Style Guide:** [PMD Apex Rule Sets](https://pmd.github.io/pmd-5.5.7/pmd-apex/rules/index.html). If applicable, `Java` conventions should be followed where there is no guidance specific to `Apex`.
-    - **Code Analyzer:**
+    - **Dev Tools:**
         - [PMD](https://pmd.github.io/) can be used with [apex](https://github.com/pmd/pmd/tree/master/pmd-apex).
 1. `CSS/Sass`
     - **Style Guide:** [Airbnb CSS / Sass Styleguide](https://github.com/airbnb/css)
-    - **Linters:**
+    - **Dev Tools:**
         - Use [sass-lint](https://github.com/sasstools/sass-lint) with the [airbnb config](https://github.com/airbnb/css)
 1. `HTML`
     - You should be writing Valid HTML according to the [living standard](https://html.spec.whatwg.org/)
-    - **Validators:** 
+    - **Dev Tools:** 
         - [W3 HTML Validation](https://validator.w3.org/nu/) you can also use [a command-line version of this](https://github.com/zrrrzzt/html-validator-cli)
+        - [Accessibility Testing](https://allyjs.io/)
 1. `Java`
     - **Style Guide:** [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html)
     - **Dev Tools:**
-        - [PMD]
-1. `Javascript` - 
+        - [PMD](https://pmd.github.io/)
+1. `Javascript`
+    - **Style Guide:** [AirBnB Javascript Style Guide](https://github.com/airbnb/javascript)
+    - **Dev Tools:**
+        - [ES Lint](https://eslint.org/)
 1. `Python`
     - **Style Guide:** [PEP 8](https://www.python.org/dev/peps/pep-0008/)
-1. `Salesforce Lightning` -
+    - **Dev Tools:**
+        - [Pylint](https://www.pylint.org/)
+1. `Salesforce Lightning`
+1. `Shell Scripting`
+    - **Style Guide:** [Google Shell Style Guide](https://google.github.io/styleguide/shell.xml)
 1. `VisualForce`
     - **Style Guide:** [PMD Apex Rule Sets](https://pmd.github.io/pmd-5.5.7/pmd-apex/rules/index.html). If applicable, `Javascript/HTML/CSS` conventions should be followed where there is no guidance specific to `VisualForce`.
-    - **Dev Tools:** [PMD](https://pmd.github.io/) can be used with [VisualForce](https://github.com/pmd/pmd/tree/master/pmd-visualforce).
-    
-1. https://google.github.io/styleguide/shell.xml
+    - **Dev Tools:**
+        - [PMD](https://pmd.github.io/) can be used with [VisualForce](https://github.com/pmd/pmd/tree/master/pmd-visualforce).
 
-## General Practices for Adoption of this guide
-1. Favor people over Process - Code Reviews > Process
-1. Linters are good, but should not get in the way of development.
-1. Code reviews should catch style/standards errors
-1. Editor Independent
-    
-    
-## Preferred Editors and IDEs
-While there is some advantages to standardizing a team on an editor.
-We leave that decision up to the individual developer, coding standard/style guides should be editor/ide independent.
+# IDE
+Developers should use tools they are comfortable with. No standard IDE will be mandated on a project because it is a distraction from productivity. Related: [What Editor Do you Use?](https://medium.com/humans-create-software/what-editor-do-you-use-fun-fun-function-31-cab6d2e61a25)
 
-Our devs like to use the following:
+## Suggested Editors/IDEs
 
-- Atom
-- Sublime
-- VS Code
-- Vim
-- Intellij
-- Eclipse
+Some of the editors our devs use include: 
+- [Atom](https://atom.io/)
+- [Eclipse](http://www.eclipse.org/downloads/packages/)
+- [Intellij](https://www.jetbrains.com/idea/)
+- [Sublime](https://www.sublimetext.com/3)
+- [Vim](https://www.vim.org/)
+- [VS Code](https://code.visualstudio.com/Vim)
 
-Related: [What Editor Do you Use?](https://medium.com/humans-create-software/what-editor-do-you-use-fun-fun-function-31-cab6d2e61a25)
+# Testing
+
+# Definition of Done
 
 # Contributing
 There are two main branches:
