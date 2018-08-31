@@ -30,14 +30,25 @@ Our goal is to provide the most value within the scope of our projects. We need 
 
 Tech changes quickly, we should use tech that is appropriate for the project at hand. Favor good tech over old habits.
 
-*from the [Agile Manifesto](http://agilemanifesto.org/)*
+* Quotes from the [Agile Manifesto](http://agilemanifesto.org/)*
+
+
+# Versioning
+In all projects there needs to be a reliable method of source/version control. [git](https://git-scm.com/) is the preferred tool.
+
+## General Branching Strategy
+
+[Branching Strategy Overview](./assets/branching.png)
+
+## Git Repo Hosting
+One of the following should be used:
+- GitHub
+- BitBucket
 
 # Deployment
-
 - single source of truth
 - based on tooling and client requiremnts there are a couple of strategies.
 - Tuan's post
-# Versioning
 # Style
 # IDE
 # Testing
@@ -67,6 +78,8 @@ Tech changes quickly, we should use tech that is appropriate for the project at 
 1. `VisualForce`
     - **Style Guide:** [PMD Apex Rule Sets](https://pmd.github.io/pmd-5.5.7/pmd-apex/rules/index.html). If applicable, `Javascript/HTML/CSS` conventions should be followed where there is no guidance specific to `VisualForce`.
     - **Dev Tools:** [PMD](https://pmd.github.io/) can be used with [VisualForce](https://github.com/pmd/pmd/tree/master/pmd-visualforce).
+    
+1. https://google.github.io/styleguide/shell.xml
 
 ## General Practices for Adoption of this guide
 1. Favor people over Process - Code Reviews > Process
