@@ -94,6 +94,8 @@ Style and coding standards will vary based on language/library conventions.
     - **Dev Tools:**
         - [Pylint](https://www.pylint.org/)
 1. `Salesforce Lightning`
+    - **General Guidelines:**
+        - [Thinking in Lightning](https://medium.com/eigen-x/thinking-in-lightning-f96b5dbf0a55)
 1. `Shell Scripting`
     - **Style Guide:** [Google Shell Style Guide](https://google.github.io/styleguide/shell.xml)
 1. `VisualForce`
@@ -115,8 +117,19 @@ Some of the editors our devs use include:
 - [VS Code](https://code.visualstudio.com/Vim)
 
 # Testing
+Testing Strategies should be determined on a per project basis.
+
+General Guidelines:
+- [A Realistic Approach to Software Testing on the Software Platform](https://medium.com/eigen-x/a-realistic-approach-to-software-testing-on-the-salesforce-platform-7df39c34162b)
+- [Commonly Made Mistakes When Testing Software on the Salesforce Platform](https://medium.com/eigen-x/commonly-made-mistakes-when-testing-software-on-the-salesforce-platform-ad38cf32d173
+)
+- [Test Pyramid](https://martinfowler.com/bliki/TestPyramid.html)
+- [Given When Then](https://martinfowler.com/bliki/GivenWhenThen.html)
 
 # Definition of Done
+Definitions of done should be determined on a per project basis.
+
+A 'definition of done' is consistent requirements cross all user stories. Example: Accessibility Testing
 
 # Contributing
 There are two main branches:
