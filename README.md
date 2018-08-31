@@ -41,13 +41,13 @@ In all projects there needs to be a reliable method of source/version control. [
 ![Branching Strategy Overview](./assets/branching.png)
 
 **Branches:**
-- `master` or `release`: This is the live or production version of the code.
-- `dev` or `staging`: This is the staging version of the code. Testing of new features should be done here prior to a release to `master`/`release` branch.
+- `master`/`release`: This is the live or production version of the code.
+- `dev`/`staging`: This is the staging version of the code. Testing of new features should be done here prior to a release to `master`/`release` branch.
 - `feature`: This branch should be where development takes place. Branch can be for individual developers or issues/bugs/features. Sometimes if the feature is big there will have to be subbranches merging into this. Naming isn't as important as long as the `pull request` to `dev`/`staging` includes the appropriate ticket number.
 
 **Actions:**
-- Release: When code in the `dev`/`staging` branch is accepted, a version number should be assigned and the code should be merged to `master`/`release`
-- Pull Request: In most cases there should be one pull request for a coinciding `bug` resolution, `feature` add, or `requirement` fulfillment. The pull request should reference the appropriate issue and should include the ticket number in the name of the Pull Request.
+- `release`: When code in the `dev`/`staging` branch is accepted, a version number should be assigned and the code should be merged to `master`/`release`
+- `pull request`: In most cases there should be one pull request for a coinciding `bug` resolution, `feature` add, or `requirement` fulfillment. The pull request should reference the appropriate issue and should include the ticket number in the name of the Pull Request.
 
 ### Salesforce Specific Source Control
 Salesforce often uses Production as the source of truth, which can be problematic. In which case see the `Source Code Management` section of [Software Development in Salesforce](https://www.linkedin.com/pulse/software-development-salesforce-tuan-lu/).
