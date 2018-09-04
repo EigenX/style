@@ -38,7 +38,10 @@ Tech changes quickly, we should use tech that is appropriate for the project at 
 # Requirements
 Should be a simple yet clear sentence describing who needs what and the benefit is.  
 
-ie As a <specific user or role> I want to [do something], so that I can [realize a reward]
+i.e. As a <specific user or role> I want to [do something], so that I can [realize a reward].
+
+Related:
+- [Given When Then](https://martinfowler.com/bliki/GivenWhenThen.html)
 
 # Versioning
 In all projects there needs to be a reliable method of source/version control. [git](https://git-scm.com/) is the preferred tool.
