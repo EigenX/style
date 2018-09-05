@@ -51,9 +51,9 @@ In all projects there needs to be a reliable method of source/version control. [
 ![Branching Strategy Overview](./assets/branching.png)
 
 **Branches:**
-- `master`/`release`/`prod`: This is the live or production version of the code. The single source of truth for the most up-to-date code.
-- `dev`/`staging`/`full`/`partial`: This is the staging version of the code. Testing of new features should be done here prior to a release to `master`/`release`/`prod` branch.
-- `feature`/`partial`/`dev`: This branch should be where development takes place. Branch can be for individual developers or issues/bugs/features. Sometimes if the feature is big there will have to be subbranches merging into this. Naming isn't as important as long as the `pull request` to `dev`/`staging`/`full`/`partial` includes the appropriate ticket number.
+- `production`: This is the live or production version of the code. The single source of truth for the most up-to-date code. (aka `release` or `master`)
+- `staging`: This is the staging version of the code. In Salesforce, it will be deployed to a full or partial sandbox . Testing of new features should be done here prior to a release to `production` branch. (aka `dev`)
+- `dev`: This branch should be where development takes place. In Salesforce, it will it will be deployed to a full or partial sandbox so that admins can make changes as well and those changes can be captured in metadata diffs. Branch can be for individual developers or issues/bugs/features. Sometimes if the feature is big there will have to be subbranches merging into this. Naming isn't as important as long as the `pull request` to `staging` includes the appropriate ticket number.
 
 **Actions:**
 - `release`: When code in the `dev`/`staging` branch is accepted, a version number should be assigned and the code should be merged to `master`/`release`
@@ -70,8 +70,7 @@ Facilitates release management by using Metadata Packages.
 Salesforce customizations can be accessed as text or XML through a number of interfaces. The most common are the Metadata API and the SFDX commandline tool which uses the Metadata API.
 
 One of the following should be used:
-- GitHub
-- BitBucket
+- Git
 - Subversion
 - VSTS
 - TFS
