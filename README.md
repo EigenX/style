@@ -12,6 +12,7 @@ A guide for preferred coding standards and styles at Eigen X.
 1. [Testing Guidelines](#testing)
 1. [Definition of Done](#definition-of-done)
 1. [Contributing](#contributing)
+1. [Change Sets]
 
 # Agile
 
@@ -63,8 +64,8 @@ In all projects there needs to be a reliable method of source/version control. [
 Salesforce often uses Production as the source of truth, which can be problematic. In which case see the `Source Code Management` section of [Software Development in Salesforce](https://www.linkedin.com/pulse/software-development-salesforce-tuan-lu/).
 
 ## Source Control Tools
-Source Code Management is typically required for larger heavily customized implementations of Salesforce. Its benefits are as follows. 
-Maintains historical record of changes for code review, rollback of changes and management of packages to be released. 
+Source Code Management is typically required for larger heavily customized implementations of Salesforce. Its benefits are as follows.
+Maintains historical record of changes for code review, rollback of changes and management of packages to be released.
 Facilitates means for continuous integration across packages and sandboxes.
 Facilitates release management by using Metadata Packages.  
 Salesforce customizations can be accessed as text or XML through a number of interfaces. The most common are the Metadata API and the SFDX commandline tool which uses the Metadata API.
@@ -94,7 +95,7 @@ Style and coding standards will vary based on language/library conventions.
         - Use [sass-lint](https://github.com/sasstools/sass-lint) with the [airbnb config](https://github.com/airbnb/css)
 1. `HTML`
     - You should be writing Valid HTML according to the [living standard](https://html.spec.whatwg.org/)
-    - **Dev Tools:** 
+    - **Dev Tools:**
         - [W3 HTML Validation](https://validator.w3.org/nu/) you can also use [a command-line version of this](https://github.com/zrrrzzt/html-validator-cli)
         - [Accessibility Testing](https://allyjs.io/)
 1. `Java`
@@ -124,7 +125,7 @@ Developers should use tools they are comfortable with. No standard IDE will be m
 
 ## Suggested Editors/IDEs
 
-Some of the editors our devs use include: 
+Some of the editors our devs use include:
 - [Atom](https://atom.io/)
 - [Eclipse](http://www.eclipse.org/downloads/packages/)
 - [Intellij](https://www.jetbrains.com/idea/)
@@ -133,7 +134,7 @@ Some of the editors our devs use include:
 - [VS Code](https://code.visualstudio.com/Vim)
 
 # Testing
-Testing Strategies should be determined on a per project basis. 
+Testing Strategies should be determined on a per project basis.
 
 General Guidelines:
 - [A Realistic Approach to Software Testing on the Software Platform](https://medium.com/eigen-x/a-realistic-approach-to-software-testing-on-the-salesforce-platform-7df39c34162b)
